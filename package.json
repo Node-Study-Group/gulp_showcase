@@ -1,0 +1,15 @@
+{
+  "name": "gulp_showcase",
+  "version": "0.0.0",
+  "description": "demo for node study group",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "index.js"
+  },
+  "author": "Colby Somerville",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.13.1"
+  }
+}
