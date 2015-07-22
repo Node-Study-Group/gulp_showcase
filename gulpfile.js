@@ -13,13 +13,13 @@ gulp.task('styles', function(){
 })
 
 gulp.task('scripts', function(){
-  gulp.src('./assets/scripts/**/*.js')
+  gulp.src(['./assets/scripts/**/!(main)*.js', './assets/scripts/main.js'])
     .pipe(sourcemaps.init())
     .pipe(concat('bundle.js'))
     .pipe(uglify())
     .pipe(sourcemaps.write())
-    .pipe(gulp.dest('build'))
-})
+    .pipe(gulp.dest('build'));
+});
 
 gulp.task('watch', function(){
   gulp.watch('./assets/scripts**/*.js', ['scripts']);
