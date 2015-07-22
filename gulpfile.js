@@ -22,7 +22,7 @@ gulp.task('scripts', function(){
 });
 
 gulp.task('watch', function(){
-  gulp.watch('./assets/scripts**/*.js', ['scripts']);
+  gulp.watch('./assets/scripts/**/*.js', ['scripts']);
   gulp.watch('./assets/styles/**/*.less', ['styles']);
 })
 
